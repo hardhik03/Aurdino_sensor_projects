@@ -1,4 +1,4 @@
-# This code runs the ultrasonic sensor and based on the distance of an object from the sensor , led glows.
+// This code runs the ultrasonic sensor and based on the distance of an object from the sensor , led glows.
 const int trigPin = 9;
 const int echoPin = 10;
 
