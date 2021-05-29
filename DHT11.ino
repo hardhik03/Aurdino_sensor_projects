@@ -15,13 +15,14 @@ void loop()
   Serial.println();
 
   int chk = dht.read(DHTPIN);
-
-  float t = dht.readTemperature();
-  Serial.print(t);
-  
-  float h = dht.readHumidity();
-  Serial.print(h);
-
+  int chk = DHT.read11(DHT11_PIN);
+  hum = DHT.humidity;
+  temp= DHT.temperature;
+  Serial.print("Humidity: ");
+  Serial.print(hum);
+  Serial.print(" %, Temp: ");
+  Serial.print(temp);
+  Serial.println(" Celsius");
   delay(2000);
 
 }
